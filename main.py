@@ -15,10 +15,7 @@ def furry34_parsing(page):
             links_txt = open('links.txt', 'a')
             links_txt.write('https://furry34.com' + i['href'] + '\n')
             links_txt.close()
-        print(Fore.GREEN + 'links was added into the links.txt file')
-        for i in find_test:
-            webbrowser.open_new(url='https://furry34.com' + i['href'])
-            time.sleep(5)
+        print(Fore.GREEN + 'links was added into the links.txt file')
     except:
         print(Fore.RED + 'something went wrong. please try again')
 
